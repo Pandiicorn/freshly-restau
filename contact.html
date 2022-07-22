@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly restaurant</title>
+    <link rel="icon" type="image/png" href="ressources/images/favicon.png">
+    <link rel="stylesheet" href="ressources/fonts/slick-theme.css">
+    <link rel="stylesheet" href="ressources/fonts/slick.css">
+    <script src="https://kit.fontawesome.com/5526d00e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+        <a href="index.html">
+        <img src="ressources/images/logo.png" alt="">
+        <h1>Freshly restaurant</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="current"><a href="menu.html">Menus</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Contact us</h2>
+        <p class="menu">If your want to make a reservation, please complete this form.</p> <br>
+        <p class="menu">Fields with <span>*</span> are required.</p>
+
+        <form action="">
+            <div class="flex">
+            <fieldset class="reservation">
+                <h4>Reservation</h4>
+                <label for="date">Date</label>
+                <input type="date" value="jj-mm-aaaa"
+                min="01-01-2022" required>
+
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time" required>
+
+                <label for="number">Numer of guests</label>
+                <input type="number" min="1" max="50" required>
+            </fieldset>
+
+            <fieldset class="details">
+                <h4>Details</h4>
+                <label for="name">Name</label>
+                <input type="text" required>
+
+                <label for="email">Email</label>
+                <input type="email">
+
+                <label for="tel">Telephone</label>
+                <input type="tel" name="tel" id="tel">
+            </fieldset> 
+            </div>
+
+            <fieldset class="request">
+                <h4>Further request</h4>
+                <div class="column">
+                <textarea name="commentaire" cols="50" rows="10"></textarea>
+                <div class="reserve">
+                <button>RESERVE</button>
+                </div>
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer container">
+            <div>
+            <h4>Opening hours</h4>
+            <ul>
+                <li>Monday: Closed</li>
+                <li>Tue-Wed : 9am - 10pm</li>
+                <li>Thu-Fri : 9am - 10pm</li>
+                <li>Sat-Sun : 5pm - 10pm</li>
+            </ul>
+            </div>
+
+            <div>
+            <h4>Contact</h4>
+            <ul>
+                <li>13 Christopher Street</li>
+                <li>New York,</li>
+                <li>NY 1001463543</li>
+                <li>+01 2000 800 9999</li>
+            </ul>
+            </div>
+
+            <div>
+            <h4>Social networks</h4>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/mixitup.min.js"></script>
+	<script type="text/javascript">
+            var mixer = mixitup('.plat');
+	</script>
+</body>
+</html>

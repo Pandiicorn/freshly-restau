@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly restaurant</title>
+    <link rel="icon" type="image/png" href="ressources/images/favicon.png">
+    <link rel="stylesheet" href="ressources/fonts/slick-theme.css">
+    <link rel="stylesheet" href="ressources/fonts/slick.css">
+    <script src="https://kit.fontawesome.com/5526d00e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+        <a href="index.html">
+        <img src="ressources/images/logo.png" alt="">
+        <h1>Freshly restaurant</h1>
+        </a>
+        <nav>
+            <ul>
+                <li id="current"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menus</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main class="container">
+        <div class="slide">
+            <img src="ressources/images/slider-01.jpg" alt="">
+            <img src="ressources/images/slider-02.jpg" alt="">
+            <img src="ressources/images/slider-03.jpg" alt="">
+        </div>
+
+        <h2>Welcome to Freshly Restaurant</h2>
+        <article class="right">
+            <img src="ressources/images/location.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam voluptas officiis nisi voluptates rerum sed velit, ut explicabo magnam enim aliquid maxime consectetur accusamus deleniti? Error voluptatem, fugiat autem eius voluptates rem sit reiciendis, inventore necessitatibus totam ipsum in enim repellat? Iste dolor praesentium fugit voluptatum voluptate debitis repudiandae mollitia blanditiis tempora nulla? Itaque, molestiae dignissimos? Maxime, delectus voluptas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo voluptas rerum dignissimos est, quisquam consectetur commodi asperiores architecto maiores eligendi cupiditate, sed atque, eaque officiis libero praesentium! Facere obcaecati, placeat expedita sapiente quidem voluptatibus quod ducimus facilis illo veritatis debitis repellat aliquam harum adipisci error at alias ? </p>
+        </article>
+
+        <h2>Special menus</h2>
+
+        <section class="special">
+        <article class="menus">
+            <h3>Meat menu</h3>
+            <figure class="absolute">
+            <img src="ressources/images/meat-menu.jpg" alt="">
+            <figcaption><p class="prix">17 $</p><p>soft drinks and desert included</p><p>+ taxes</p></figcaption>
+            </figure>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <a href="#" class="more">See more</a>
+        </article>
+
+        <article class="menus">
+            <h3>Fish menu</h3>
+            <figure class="absolute">
+            <img src="ressources/images/fish-menu.jpg" alt="">
+            <figcaption><p class="prix">19 $</p><p>soft drinks and desert included</p><p>+ taxes</p></figcaption>
+            </figure>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <a href="#" class="more">See more</a>
+        </article>
+
+        <article class="menus">
+            <h3>Vegetarian menu</h3>
+            <figure class="absolute">
+            <img src="ressources/images/vegetarian-menu.jpg" alt="">
+            <figcaption><p class="prix">18 $</p><p>soft drinks and desert included</p><p>+ taxes</p></figcaption>
+            </figure>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <a href="#" class="more">See more</a>
+        </article>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer container">
+            <div>
+            <h4>Opening hours</h4>
+            <ul>
+                <li>Monday: Closed</li>
+                <li>Tue-Wed : 9am - 10pm</li>
+                <li>Thu-Fri : 9am - 10pm</li>
+                <li>Sat-Sun : 5pm - 10pm</li>
+            </ul>
+            </div>
+
+            <div>
+            <h4>Contact</h4>
+            <ul>
+                <li>13 Christopher Street</li>
+                <li>New York,</li>
+                <li>NY 1001463543</li>
+                <li>+01 2000 800 9999</li>
+            </ul>
+            </div>
+
+            <div>
+            <h4>Social networks</h4>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slide').slick({
+            infinite:true,
+            slidesToShow:1,
+            slidesToScroll:1,
+            dots: true,
+          });
+        });
+      </script>
+</body>
+</html>

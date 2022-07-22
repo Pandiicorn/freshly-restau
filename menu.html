@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly restaurant</title>
+    <link rel="icon" type="image/png" href="ressources/images/favicon.png">
+    <link rel="stylesheet" href="ressources/fonts/slick-theme.css">
+    <link rel="stylesheet" href="ressources/fonts/slick.css">
+    <script src="https://kit.fontawesome.com/5526d00e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+        <a href="index.html">
+        <img src="ressources/images/logo.png" alt="">
+        <h1>Freshly restaurant</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="current"><a href="menu.html">Menus</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Details of our menus</h2>
+        <p class="menu">Choose your main course according to your menu!</p>
+
+        <div class="toolbar">
+        <button type="button" data-filter="all">ALL</button>
+        <button type="button" data-filter=".meat">MEAT</button>
+        <button type="button" data-filter=".vegan">VEGAN</button>
+        <button type="button" data-filter=".fish">FISH</button>
+        </div>
+
+        <article class="menus plat container">
+            <figure class="mix fish absolute">
+            <img src="ressources/menus/fish-01.jpg">
+            <figcaption>Grilled mussels</figcaption>
+            </figure>
+
+            <figure class="mix vegan absolute">
+            <img src="ressources/menus/vegan-03.jpg">
+            <figcaption>Mixed vegetables</figcaption>
+            </figure>
+
+            <figure class="mix meat absolute">
+            <img src="ressources/menus/meat-03.jpg" >
+            <figcaption>Freshly kebabs</figcaption>
+            </figure>
+
+            <figure class="mix fish absolute">
+            <img src="ressources/menus/fish-02.jpg">
+            <figcaption>Cajun shrimp</figcaption>
+            </figure>
+
+            <figure class="mix meat absolute">
+            <img src="ressources/menus/meat-01.jpg">
+            <figcaption>Freshly burger</figcaption>
+            </figure>
+
+            <figure class="mix vegan absolute">
+            <img src="ressources/menus/vegan-02.jpg" >
+            <figcaption>Grilled eggplants</figcaption>
+            </figure>
+
+            <figure class="mix meat absolute">
+            <img src="ressources/menus/meat-02.jpg">
+            <figcaption>Beef stew with pasta</figcaption>
+            </figure>
+
+            <figure class="mix fish absolute">
+            <img src="ressources/menus/fish-03.jpg" >
+            <figcaption>Grilled salmon</figcaption>
+            </figure>
+
+            <figure class="mix vegan absolute">
+            <img src="ressources/menus/vegan-01.jpg">
+            <figcaption>Vegetable Jambalaya</figcaption>
+            </figure>
+
+        </article>
+
+        <h2>Deserts</h2>
+        <p class="menu">Here are the deserts you can choose to finish your meal (included in your menu).</p>
+
+        <article class="menus deserts">
+            <figure class="absolute">
+            <img src="ressources/menus/desert-01.jpg" alt="">
+            <figcaption>Tiramisu</figcaption>
+            </figure>
+
+            <figure class="absolute">
+            <img src="ressources/menus/desert-02.jpg" alt="">
+            <figcaption>Freshly Pancakes</figcaption>
+            </figure>
+
+            <figure class="absolute">
+            <img src="ressources/menus/desert-03.jpg" alt="">
+            <figcaption>Redberries cup</figcaption>
+            </figure>
+        </article>
+
+        <h2>Cocktails</h2>
+        <p class="menu">Soft drinks are included, but if you want you can order one of our excellent cocktails (not included in the menu).</p>
+
+        <article class="menus cocktails">
+
+            <figure class="absolute">
+            <img src="ressources/menus/drink-01.jpg" alt="">
+            <figcaption>Winter Whiskey</figcaption>
+            </figure>
+
+            <figure class="absolute">
+            <img src="ressources/menus/drink-02.jpg" alt="">
+            <figcaption>Paloma cocktail</figcaption>
+            </figure>
+
+            <figure class="absolute">
+            <img src="ressources/menus/drink-03.jpg" alt="">
+            <figcaption>Bellini cocktail</figcaption>
+            </figure>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="footer container">
+            <div>
+            <h4>Opening hours</h4>
+            <ul>
+                <li>Monday: Closed</li>
+                <li>Tue-Wed : 9am - 10pm</li>
+                <li>Thu-Fri : 9am - 10pm</li>
+                <li>Sat-Sun : 5pm - 10pm</li>
+            </ul>
+            </div>
+
+            <div>
+            <h4>Contact</h4>
+            <ul>
+                <li>13 Christopher Street</li>
+                <li>New York,</li>
+                <li>NY 1001463543</li>
+                <li>+01 2000 800 9999</li>
+            </ul>
+            </div>
+
+            <div>
+            <h4>Social networks</h4>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/mixitup.min.js"></script>
+	<script type="text/javascript">
+            var mixer = mixitup('.plat');
+	</script>
+</body>
+</html>

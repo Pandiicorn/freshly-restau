@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Athiti', sans-serif;
+    font-size: 1.8rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+main {
+    padding: 0em 1em;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Merienda', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+li a,a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* *************************************** */
+
+header {
+    text-align: center;
+    background: linear-gradient(#ebe3db,white);
+}
+
+header img {
+    width: 10em;
+    margin-top: 2em;
+}
+
+#current {
+    background-color: #4c4343;
+}
+
+#current a {
+    color: white;
+}
+
+header nav {
+    padding-top: 1em;
+}
+
+header nav ul {
+    background-color: #ebe3db;
+    padding: 0;
+    margin-bottom: 1.5em;
+}
+
+header nav li {
+    transition: background-color 1s, color .5s;
+}
+header nav a {
+    color: black;
+    font-weight: bold;
+    display: block;
+    border-top: 1px solid black;
+}
+
+header nav a:hover {
+    color: white;
+    width: 100%;
+}
+
+header nav a:hover {
+    background-color: #950000;
+}
+
+h1{
+    color: black;
+}
+
+h2 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+h1::before, h1::after,
+h2::before, h2::after,
+h3::before, h3::after {
+    font-family: "Font Awesome 5 Free";
+    color: #950000;
+    content: "\f005";
+    margin-left: .5em;
+    margin-right: .5em;
+    font-size: 1rem;
+}
+
+h1,h2,h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-prev::before, .slick-next::before {
+    font-size: 40px;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev {
+    left: 10px;
+    z-index: 2;
+}
+
+article {
+    margin-bottom: 2em;
+}
+
+.menus {
+    background-color: #ebe3db;
+    padding-bottom: .4em;
+}
+
+.absolute {
+    position: relative;
+}
+
+.absolute figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(76,67,67,.9);
+    color: white;
+    display: none;
+    outline: 5px solid white;
+    outline-offset: -3em;
+}
+
+.absolute:hover figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prix {
+    font-size: 5rem;
+}
+
+figcaption p {
+    font-size: 1.5rem;
+}
+
+
+p, li {
+    font-weight: bold;
+}
+
+.menus ul {
+    padding: 0;
+}
+
+.menus ul li {
+    margin-bottom: .5em;
+    border-bottom: black 2px dashed;
+}
+
+.menus ul li::before {
+    font-family: "Font Awesome 5 Free";
+    color: #950000;
+    content: "\f005";
+    margin-right: .5em;
+    margin-left: 2em;
+    font-size: 1rem;
+}
+
+.more {
+    background-color: #4c4343;
+    display: block;
+    text-align: center;
+    margin: 2em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+
+/* .more::before {
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    content: "\f2e7";
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 1em;
+} */
+
+.more:hover {
+    transition: background-color .5s;
+    background-color: #950000;
+}
+
+footer {
+    background-image: url(ressources/images/footer-bg.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 1em 1em;
+}
+
+footer ul {
+    padding: 0;
+}
+
+h4 {
+    border-bottom: dashed 1px white;
+    margin-bottom: 1em;
+    margin-top: 3em;
+    padding-bottom: .5em;
+}
+
+footer a {
+    margin-left: .5em;
+    margin-right: .5em;
+    font-size: 2rem;
+}
+
+
+
+/* ************** Responsive ************* */
+
+
+@media screen and (min-width: 780px) {
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    header nav a {
+        border: none;
+        padding: .5em;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2em;
+    }
+
+    .footer div {
+        width: 25%;
+    }
+
+    .dining {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .dining figure {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    header div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 1em;
+    }
+
+
+    header nav ul  {
+        background-color: rgba(255, 255, 255, 0) ;
+    }
+
+    header nav li {
+        margin-right: 1em;
+        background-color: #ebe3db;
+    }
+    
+    header a {
+        display: flex;
+        align-items: center;
+    }
+
+    .right img {
+        float: right;
+        width: 40%;
+        margin-left: 1em;
+    }
+
+    .right p {
+        width: 60%;
+    }
+
+    .right::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .special {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .special .menus {
+        width: 32%;
+    }
+}
+
+
+
+
+/* ******************* Menu ************************** */
+
+.menu {
+    text-align: center;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar button {
+    background-color: #ebe3db;
+    padding: 1em 2em;
+    border: none;
+    margin: 1em;
+} 
+
+.toolbar button:hover {
+    background-color: #950000;
+    color: white;
+    cursor: pointer;
+}
+
+.plat,.cocktails, .deserts{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2em 1em;
+    padding: 2em 1em;
+}
+
+
+
+/* *************** About us ******************* */
+video {
+    width: 80%;
+}
+
+.video {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.dining {
+    background-color: #ebe3db;
+    padding: 1em 1em;
+    margin-top: 2em;
+}
+
+.dining figcaption {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+/* ******************* Contact ****************** */
+
+span {
+    color: #950000;
+}
+
+form {
+    background-color: #ebe3db;
+}
+
+form h4 {
+    border: none;
+}
+
+fieldset, input, textarea {
+    border: none;
+}
+
+input {
+    width: 80%;
+    height: 2em;
+    border-radius: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+.reservation, .details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.request button {
+    background-color: #4c4343;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1em 2em;
+    width: 40%;
+}
+
+.request button:hover {
+    background-color: #950000;
+    cursor: pointer;
+}
+
+.reserve {
+    text-align: center;
+    margin-top: 1em;
+}
